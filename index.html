@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> - Allana Creech</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/blog-post.css" rel="stylesheet">
+
+	<!-- 	Bootstrap, CSS, & FA Link -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	
+        <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	
+
+	<!-- Google Font Link -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div id="topArea">
+                <a class="navbar-brand" href="#">Firebase Database Assignment</a>
+                                <!-- Author -->
+                <p class="navbar-brand" href="#">
+                    by <a href="https://github.com/allanacreech">Allana Creech</a>
+                </p>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <!--  <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul> -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+    <!-- Jumbotron Title -->
+    <div class="jumbotron">
+        <h1 class="text-center">CandyLand Train Station</h1>
+        <h3 class="text-center">"Keep Calm and Eat Candy!"</h3>
+    </div>
+<hr>                
+
+
+                <!-- Preview Image -->
+                <img class="img-responsive" src="assets/images/candyImage.png" alt="">
+
+                <hr>
+    <!-- Add Your Train -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Search for a Delicous Destination</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="bidderName">Train Search</label>
+                            <input type="text" class="form-control" id="trainSearch">
+                        </div>
+                        <div class="form-group">
+                            <label for="bidderPrice">Destination</label>
+                            <input type="number" class="form-control" id="destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="bidderPrice">Train Time</label>
+                            <input type="number" class="form-control" id="trainTime">
+                        </div>
+                        <div class="form-group">
+                            <label for="bidderPrice">Frequency</label>
+                            <input type="number" class="form-control" id="frequency">
+                        </div>
+                        <button id="submitBid" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>  
+    </div>
+                <!-- Blog Comments -->
+
+                <!-- Comments Form -->
+                <div class="well">
+                    <h4>Leave a Comment:</h4>
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <hr>
+
+                <!-- Posted Comments -->
+
+                <!-- Comment -->
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="assets/images/candy-cane1.jpg" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">So Delicious
+                            <small>By: QuizzyOne.12</small>
+                        </h4>
+                        I love this train stuff :)
+                    </div>
+                </div>
+
+                <!-- Comment -->
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="assets/images/candy-cane2.jpg" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Greatest Train Display Ever
+                            <small>By: Wolf-One</small>
+                        </h4>
+                        I told all my friends to use this app. Its the best imaginary candy train that I have found. Whooo Whooo.
+                        <!-- Nested Comment -->
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="http://..assets/images/candy-cane3.jpg" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Best App Every
+                                    <small>By: Little Candy12</small>
+                                </h4>
+                                Thanks Wolf-One for Telling Me about this app. It truly made making trips with my pretend friends so much easier.
+                            </div>
+                        </div>
+                        <!-- End Nested Comment -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Search Well -->
+                <div class="well">
+                <h3>Train Search</h3>
+                    
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="trainSearch">
+                        <span class="input-group-btn">
+                            <button id="submitBid" type="submit" class="btn btn-primary">Submit</button>
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                    <!-- /.input-group -->
+                </div>
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4>My Work</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="https://github.com/allanacreech/GifTastic">Giphy Fun!</a>
+                                </li>
+                                <li><a href="https://github.com/allanacreech/TriviaGame">Trivia Game</a>
+                                </li>
+                                <li><a href="https://github.com/allanacreech/week-4-game">Dragon Gem's</a>
+                                </li>
+                                <li><a href="https://github.com/allanacreech/week-3-game">Gravity Falls Inspired</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                        <h4>Message me</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.linkedin.com/in/allana-creech">Linkedin</a>
+                                </li>
+                                <li><a href="https://github.com/allanacreech">Github</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>Candy Fun!</h4>
+                    <img class="media-object" src="https://giphy.com/gifs/kawaii-FPYD8WD7r4dm8" alt="giphy">
+               
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Allana Creech 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+<!-- 		<audio src= "assets/music/backgroundMusic.m4a" autoplay="true" width ="180" height= "90" hidden="false" loop="true">
+			<p>If you are reading this, it is because your browser does not support the audio element.     </p>			
+		</audio> -->
+
+<!-- 	jQuery, Bootstrap JS, & game JS link -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	
+
+<!-- Added link to the jQuery Library -->
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+<!--Added Firebase js-->
+    <script type="text/javascript" src="assets/js/firebase.js"></script>
+
+</body>
+</html>
